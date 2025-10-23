@@ -28,13 +28,13 @@ const posts = [
     }
 ]
 
-const feedEl = document.querySelector(".feed");
+const feedEl = document.getElementById("feed");
 posts.forEach((post) =>{
     const postHtml = `
         <div class="post">
             <div class="post-header">
                 <img src="${post.avatar}" class="avatar">
-                <div>
+                <div class="post-info">
                     <p class="username">${post.name}</p>
                     <p class="location">${post.location}</p>
                 </div>
@@ -51,6 +51,7 @@ posts.forEach((post) =>{
             <p class="likes">${post.likes} likes</p>
             <p class="comment"><strong>${post.username}</strong> ${post.comment}</p>
         </div>
+        <div class="spacer"></div>
     `;
 
     feedEl.innerHTML += postHtml;
