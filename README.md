@@ -1,19 +1,48 @@
-# Getting Started
-Install the dependencies and run the project
-```
-npm install
-npm start
-```
+# Oldagram (SCRIMBA Solo Project)
 
-Head over to https://vitejs.dev/ to learn more about configuring vite
-## About Scrimba
+A mobile + desktop Instagram-style feed built with HTML, CSS, and JavaScript. Posts are dynamically rendered using JavaScript, based on a data array. Created as part of a SCRIMBA course project.
 
-At Scrimba our goal is to create the best possible coding school at the cost of a gym membership! 💜
-If we succeed with this, it will give anyone who wants to become a software developer a realistic shot at succeeding, regardless of where they live and the size of their wallets 🎉
-The Fullstack Developer Path aims to teach you everything you need to become a Junior Developer, or you could take a deep-dive with one of our advanced courses 🚀
+## Features
 
-- [Our courses](https://scrimba.com/courses)
-- [The Frontend Career Path](https://scrimba.com/fullstack-path-c0fullstack)
-- [Become a Scrimba Pro member](https://scrimba.com/pricing)
+- Displays a scrollable feed of user posts
+- Each post includes avatar, location, image, likes, and comments
+- Responsive design optimized for mobile devices
+- All content is rendered dynamically via JavaScript
+- No frameworks or build tools required
 
-Happy Coding!
+## Usage
+
+1. Clone or download this repository  
+2. Open `index.html` in your web browser  
+3. Scroll through the feed to view posts
+
+## Project Structure
+
+- `index.html` – Main HTML file, contains the container for the feed  
+- `index.css` – Styles for layout, typography, and responsiveness  
+- `index.js` – JavaScript logic for rendering posts from the data array  
+- `images/` – Contains avatars, post images, and icons
+
+## How it works
+
+- The `posts` array in `index.js` contains all post data (name, username, location, image paths, comments, likes)
+- JavaScript loops through the array and generates HTML for each post
+- The HTML is injected into the DOM using `innerHTML`
+- All logic is written in vanilla JavaScript for learning purposes
+
+## Customization
+
+- To add or modify posts, edit the `posts` array in `index.js`  
+- To change layout or colors, update styles in `index.css`  
+- To add interactivity (e.g. like buttons), extend the logic in `index.js`
+
+## Screenshot
+
+<img src="Desktop.png" width="300">
+<img src="Mobile.png" width="300">
+
+## License
+
+MIT
+
+This project was created as part of the SCRIMBA Frontend Developer Career Path.
